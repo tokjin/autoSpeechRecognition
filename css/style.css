@@ -1,6 +1,6 @@
 body {
     background-color: #0F0;
-    font-size: 41px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
 }
@@ -8,7 +8,7 @@ body {
 #result {
     bottom: 0px;
     position: fixed;
-    left: 50px;
+    left: 15px;
 }
 
 .finalText {
