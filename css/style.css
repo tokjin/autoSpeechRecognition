@@ -1,0 +1,20 @@
+body {
+    background-color: #0F0;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+#result {
+    bottom: 0px;
+    position: fixed;
+    left: 50px;
+}
+
+.finalText {
+    color: white;
+}
+
+.pendingText {
+    color:#999;
+}
