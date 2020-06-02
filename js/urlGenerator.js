@@ -37,7 +37,6 @@ class urlParam {
 let outputUrl = new urlParam();
 
 let copyText = () => {
-    if(!outputUrl.channelId) return;
     $('#outputUrl').select();
     document.execCommand('Copy');
     $('#copied-text').css('display', 'block');
@@ -92,3 +91,4 @@ $('#chk-tategaki').on('change', () => {
     outputUrl.reload();
 });
 
+outputUrl.reload();
