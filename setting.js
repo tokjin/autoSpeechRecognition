@@ -17,7 +17,7 @@ const fontSize = getParam('fontSize') || 0;
 const pendingNone = getParam('pendingNone') || false;
 
 // 文字の色(未確定)
-const pendingTextColor = getParam('pendingTextColor') || '#999;
+const pendingTextColor = getParam('pendingTextColor') || '#999';
 
 // 文字の色(確定済み)
 const finalTextColor = getParam('finalTextColor') || 'white';
