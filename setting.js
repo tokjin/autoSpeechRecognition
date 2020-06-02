@@ -8,7 +8,7 @@ let getParam = (name, url) => {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-const currentVer = 'v1.0.5';
+const currentVer = 'v1.0.6';
 
 // 文字の大きさを変更
 const fontSize = getParam('fontSize') || 51;
@@ -17,10 +17,10 @@ const fontSize = getParam('fontSize') || 51;
 const pendingNone = getParam('pendingNone') || false;
 
 // 文字の色(未確定)
-const pendingTextColor = getParam('pendingTextColor') || '#999';
+const pendingTextColor = getParam('pendingTextColor') || '999';
 
 // 文字の色(確定済み)
-const finalTextColor = getParam('finalTextColor') || 'white';
+const finalTextColor = getParam('finalTextColor') || 'FFF';
 
 // 縦書きモード
 const verticalMode = getParam('tategaki') || false;
@@ -32,7 +32,7 @@ const strokeNone = getParam('strokeNone') || false;
 const strokeSize = getParam('strokeSize') || 2;
 
 // 確定済み文字のフチの色
-const strokeColor = getParam('strokeColor') || '#000';
+const strokeColor = getParam('strokeColor') || '000';
 
 // クロマキー用の背景の色を変更
-const bgColor = getParam('bgColor') || '#0F0';
+const bgColor = getParam('bgColor') || '0F0';

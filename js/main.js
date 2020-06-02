@@ -31,8 +31,8 @@ recognition.onresult = (event) => {
         }
     }
     
-    divResult.innerHTML = '<div class="finalText" style="color: '+finalTextColor+';'+strokeTag+'">'+finalText+'</div>';
-    if(!pendingNone) divResult.innerHTML += '<div class="pendingText" style="color: '+pendingTextColor+';">'+pendingText+'</div>';
+    divResult.innerHTML = '<div class="finalText" style="color: #'+finalTextColor+';'+strokeTag+'">'+finalText+'</div>';
+    if(!pendingNone) divResult.innerHTML += '<div class="pendingText" style="color: #'+pendingTextColor+';">'+pendingText+'</div>';
 }
 
 recognition.onerror = (e) => {
@@ -72,11 +72,11 @@ if(fontSize){
 let strokeTag = '';
 
 if(!strokeNone){
-    strokeTag = '-webkit-text-stroke: '+strokeSize+'px '+strokeColor+'; text-stroke: '+strokeSize+'px '+strokeColor+';'
+    strokeTag = '-webkit-text-stroke: '+strokeSize+'px #'+strokeColor+'; text-stroke: '+strokeSize+'px #'+strokeColor+';'
 }
 
 if(bgColor){
-    document.querySelector('body').style.backgroundColor = bgColor;
+    document.querySelector('body').style.backgroundColor = '#'+bgColor;
 }
 
 recognition.start();
