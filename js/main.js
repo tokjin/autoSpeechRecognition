@@ -10,7 +10,7 @@ const divResult = document.querySelector('#result');
 const divPendingText = document.querySelector('.pendingText');
 const divFinalText = document.querySelector('.finalText');
 
-document.querySelector('title').text = 'aSR '+currentVer
+document.querySelector('title').text = 'aSR '+currentVer;
 
 SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 const recognition = new SpeechRecognition();
@@ -71,6 +71,7 @@ if(fontSize){
 
 if(!pendingTextColor){
     pendingTextColor = '#999';
+}
 
 if(!finalTextColor){
     finalTextColor = 'white';
