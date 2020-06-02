@@ -29,8 +29,8 @@ recognition.onresult = (event) => {
         }
     }
     
-    divResult.innerHTML = '<div class="finalText">'+finalText+'</div>';
-    if(!pendingNone) divResult.innerHTML += '<div class="pendingText">'+pendingText+'</div>';
+    divResult.innerHTML = '<div class="finalText" style="color: '+finalTextColor+';">'+finalText+'</div>';
+    if(!pendingNone) divResult.innerHTML += '<div class="pendingText" style="color: '+pendingTextColor+';">'+pendingText+'</div>';
 }
 
 recognition.onerror = (e) => {
@@ -67,12 +67,11 @@ if(fontSize){
     divResult.style.fontSize = fontSize+'px';
 }
 
-if(pendingTextColor){
-    divPendingText.style.color = pendingTextColor;
-}
+if(!pendingTextColor){
+    pendingTextColor = '#999';
 
-if(finalTextColor){
-    divFinalText.style.color = finalTextColor;
+if(!finalTextColor){
+    finalTextColor = 'white';
 }
 
 recognition.start();
