@@ -10,6 +10,8 @@ const divResult = document.querySelector('#result');
 const divPendingText = document.querySelector('.pendingText');
 const divFinalText = document.querySelector('.finalText');
 
+document.querySelector('title').text = 'aSR '+currentVer
+
 SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 const recognition = new SpeechRecognition();
 recognition.lang = 'ja-JP';
