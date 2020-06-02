@@ -59,7 +59,7 @@ h3 {
     bottom: 8px;
     color: white;
     background-color: #343145;
-    width: calc(100% - 660px);
+    width: 100%;
     padding: 15px 15px 5px 15px;
     font-size: 16px;
     border: 1px solid gray;
