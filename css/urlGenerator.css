@@ -59,7 +59,7 @@ h3 {
     bottom: 8px;
     color: white;
     background-color: #343145;
-    width: calc(100% - 500px);
+    width: calc(100% - 660px);
     padding: 15px 15px 5px 15px;
     font-size: 16px;
     border: 1px solid gray;
@@ -91,8 +91,8 @@ iframe {
 
 .preview-text {
     position: fixed;
-    bottom: 257px;
-    right: 406px;
+    bottom: 340px;
+    right: 565px;
     font-weight: bold;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 0px 2px 0 #000, 0-2px 0 #000, -2px 0 0 #000, 2px 0 0 #000;
     opacity: 0.7;
@@ -113,8 +113,8 @@ iframe {
 
 #iframe-area {
     position: fixed;
-    width: 480px;
-    height: 270px;
+    width: 640px;
+    height: 360px;
     bottom: 10px;
     right: 10px;
 }
