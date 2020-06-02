@@ -8,7 +8,7 @@ let getParam = (name, url) => {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-const currentVer = 'v1.0.1';
+const currentVer = 'v1.0.2';
 
 // 文字の大きさを変更
 const fontSize = getParam('fontSize') || 0;
@@ -17,10 +17,10 @@ const fontSize = getParam('fontSize') || 0;
 const pendingNone = getParam('pendingNone') || false;
 
 // 文字の色(未確定)
-const pendingTextColor = getParam('pendingTextColor') || false;
+const pendingTextColor = getParam('pendingTextColor') || '#999;
 
 // 文字の色(確定済み)
-const finalTextColor = getParam('finalTextColor') || false;
+const finalTextColor = getParam('finalTextColor') || 'white';
 
 // 縦書きモード
 const verticalMode = getParam('tategaki') || false;
