@@ -69,14 +69,6 @@ if(fontSize){
     divResult.style.fontSize = fontSize+'px';
 }
 
-if(!pendingTextColor){
-    pendingTextColor = '#999';
-}
-
-if(!finalTextColor){
-    finalTextColor = 'white';
-}
-
 recognition.start();
 
 setInterval(() => {
