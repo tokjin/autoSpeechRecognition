@@ -8,7 +8,7 @@ let getParam = (name, url) => {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-const currentVer = 'v1.0.6';
+const currentVer = 'v1.0.7';
 
 // 文字の大きさを変更
 const fontSize = getParam('fontSize') || 51;
