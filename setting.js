@@ -8,7 +8,7 @@ let getParam = (name, url) => {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-const currentVer = 'v1.0.4';
+const currentVer = 'v1.0.5';
 
 // 文字の大きさを変更
 const fontSize = getParam('fontSize') || 51;
@@ -25,3 +25,14 @@ const finalTextColor = getParam('finalTextColor') || 'white';
 // 縦書きモード
 const verticalMode = getParam('tategaki') || false;
 
+// 確定済み文字のフチを非表示にする
+const strokeNone = getParam('strokeNone') || false;
+
+// 確定済み文字のフチの幅
+const strokeSize = getParam('strokeSize') || 2;
+
+// 確定済み文字のフチの色
+const strokeColor = getParam('strokeColor') || '#000';
+
+// クロマキー用の背景の色を変更
+const bgColor = getParam('bgColor') || '#0F0';
