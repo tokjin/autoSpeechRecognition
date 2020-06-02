@@ -6,7 +6,10 @@ Webページでブラウザの音声認識機能を使おう - Web Speech API Sp
 https://qiita.com/hmmrjn/items/4b77a86030ed0071f548
 */ 
 
-const div = document.querySelector('#result');
+const divResult = document.querySelector('#result');
+const divPendingText = document.querySelector('.pendingText');
+const divFinalText = document.querySelector('.finalText');
+
 SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 const recognition = new SpeechRecognition();
 recognition.lang = 'ja-JP';
@@ -25,7 +28,9 @@ recognition.onresult = (event) => {
             pendingText = transcript;
         }
     }
-    div.innerHTML = '<div class="finalText">'+finalText+'</div><div class="pendingText">'+pendingText+'</div>';
+    
+    divResult.innerHTML = '<div class="finalText">'+finalText+'</div>';
+    if(!pendingNone) divResult.innerHTML += '<div class="pendingText">'+pendingText+'</div>';
 }
 
 recognition.onerror = (e) => {
@@ -48,6 +53,26 @@ recognition.onspeechend = (e) => {
     setTimeout(() => {
         try { recognition.start(); } catch (e) {}
     }, 500);
+}
+
+if(verticalMode){
+    divResult.style.top = '30px';
+    divResult.style.right = '15px';
+    divResult.style.writingMode = 'vertical-rl';
+    divResult.style.bottom = 'initial';
+    divResult.style.left = 'initial';
+}
+
+if(fontSize){
+    divResult.style.fontSize = fontSize+'px';
+}
+
+if(pendingTextColor){
+    divPendingText.style.color = pendingTextColor;
+}
+
+if(finalTextColor){
+    divFinalText.style.color = finalTextColor;
 }
 
 recognition.start();
